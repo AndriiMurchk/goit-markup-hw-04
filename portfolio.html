@@ -21,12 +21,23 @@
                 <ul class="head-list">
                     <li class="item" ><a href="./index.html" class="site-nav current">Студія</a></li>
                     <li class="item" ><a href="./portfolio.html" class="site-nav">Портфоліо</a></li>
-                    <li class="item" ><a href="" class="site-nav">Контакти</a></li>
+                    <li class="item" ><a href="" class="site-nav">Ктонакти</a></li>
                 </ul>
             </nav>
                 <ul class="contact">
-                    <li class="contact-list"><a href="mailto:info@devstudio.com" class="contact-nav">info@devstudio.com</a></li>
-                    <li class="contact-list"><a href="tel:+380961111111" class="contact-nav">+38 096 111 11 11</a></li>
+                    <li class="contact-list">
+                        <a href="mailto:info@devstudio.com" class="contact-nav">
+                            <svg class="icon-contact" width="16px" height="12px">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="contact-list">
+                        <a href="tel:+380961111111" class="contact-nav">
+                            <svg class="icon-contact" width="16px" height="12px">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg> 
+                            +38 096 111 11 11</a>
+                        </li>
                 </ul>  
         </div>
     </header>
@@ -44,28 +55,31 @@
         <h2 class="visually-hidden">Приклади робіт</h2>
         <ul class="list-card">
             <li class="card">
-                <img src="./images/tehn.jpg" alt="ноутбук" width="370">
-                <div class="border">
-                <h3 class="title-port ">Технокряк</h3>
-                <p class="direction ">Веб-сайт</p>
-                </div>
-                
+                <a class="card-link" href="">
+                    <img src="./images/tehn.jpg" alt="ноутбук" width="370">
+                    <div class="border">
+                        <h3 class="title-port ">Технокряк</h3>
+                        <p class="direction ">Веб-сайт</p>
+                     </div>
+                </a>                       
             </li>
             <li class="card">
-                <img src="./images/poster.jpg" alt="баскетбол" width="370">
-                <div class="border">
-                <h3 class="title-port">Постер New Orlean vs Golden Star</h3>
-                <p class="direction">Дизайн</p>
-                </div>
-  
+                <a class="card-link" href="">
+                    <img src="./images/poster.jpg" alt="баскетбол" width="370">
+                    <div class="border">
+                        <h3 class="title-port">Постер New Orlean vs Golden Star</h3>
+                        <p class="direction">Дизайн</p>
+                    </div>
+                </a> 
             </li>
             <li class="card">
-                <img src="./images/rest.jpg" alt="лого ресторан" width="370">
-                <div class="border">
-                <h3 class="title-port">Ресторан Seafood</h3>
-                <p class="direction">Додаток</p>
-                </div>
- 
+                <a class="card-link" href="">
+                    <img src="./images/rest.jpg" alt="лого ресторан" width="370">
+                    <div class="border">
+                        <h3 class="title-port">Ресторан Seafood</h3>
+                        <p class="direction">Додаток</p>
+                    </div>
+                </a> 
             </li>
             <li class="card">
                 <img src="./images/prime.jpg" alt="навушники" width="370">
@@ -120,20 +134,57 @@
 </main>
 
 <footer class="footer-page">
-    <div class="container">
-      <a  href="./index.html" class="logo-footer"><span class="logo-accent">Web</span>Studio</a>
-      <address>
-          <ul class="adr-foot-list">
-              <li>
-                  <a href="https://goo.gl/maps/U5hBPjRLJakizHJY9" class="adr" target="_blank" rel="noopener noreferrer">
-                  м. Київ, пр-т Лесі Українки, 26</a>                        
-              </li>
-              <li><a href="mailto:info@devstudio.com" class="site-nav-foot">info@devstudio.com</a></li>
-              <li><a href="tel:+380961111111" class="site-nav-foot">+38 096 111 11 11</a></li>            
-          </ul>
-      </address>
+    <div class="container container-footer">
+        <div class="footer-nav">
+            <a  href="./index.html" class="logo-footer"><span class="logo-accent">Web</span>Studio</a>
+        <address>
+        <ul class="adr-foot-list">
+            <li class="adr-foot-list-item">
+                <a href="https://goo.gl/maps/U5hBPjRLJakizHJY9" class="adr" target="_blank" rel="noopener noreferrer">
+                м. Київ, пр-т Лесі Українки, 26</a>                        
+            </li>
+            <li class="adr-foot-list-item"><a href="mailto:info@devstudio.com" class="site-nav-foot">info@devstudio.com</a></li>
+            <li class="adr-foot-list-item"><a href="tel:+380961111111" class="site-nav-foot">+38 096 111 11 11</a></li>            
+        </ul>
+        </address>
+        </div>
+        
+        <div class="social">
+            <p class="social-title">Приєднуйтесь</p>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a class="social-icon" href="inst">
+                        <svg class="social-icon-svg" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a> 
+                </li>
+                <li class="social-list-item">
+                    <a class="social-icon" href="twit">
+                        <svg class="social-icon-svg" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>                     
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-icon" href="fb">
+                        <svg class="social-icon-svg" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>        
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-icon" href="lnkdn">
+                        <svg class="social-icon-svg" width="20px" height="20px">
+                            <use class="qwe" href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </footer>
+    
+</footer>
 
 </body>
 </html>
